@@ -1,5 +1,7 @@
 <?php
 
+namespace Game\Objects;
+
 class IssueResolutions{
     public $types;
     public $domain_resolutions;

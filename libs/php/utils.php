@@ -1,4 +1,7 @@
 <?php
+
+namespace Game\Libs;
+
 class Utils{
     
     public static function redirect($url) {

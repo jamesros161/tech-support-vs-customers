@@ -1,4 +1,5 @@
 <?php
+namespace Game\Objects;
 
 class Attribute {
     public $attr_name;

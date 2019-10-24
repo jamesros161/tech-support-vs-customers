@@ -1,19 +1,10 @@
 <?php
+namespace Game;
 // core configuration
 define('GAME_LOADED', true);
-include_once "config/core.php";
-include_once "objects/game/agents.php";
-include_once "objects/game/gameutils.php";
-include_once "objects/game/attacks.php";
-include_once "objects/game/issue_resolutions.php";
-// include_once "objects/game/internal_tools.php";
-// include_once "objects/game/special_actions.php";
-include_once "objects/game/customer_stances.php";
-// include_once "objects/game/status_effects.php";
-include_once "config/database.php";
-include_once "libs/php/utils.php";
+require('config/game_includes.php');
  
-$db = new Database(); 
+$db = new Config\Database(); 
 
 // set page title
 $page_title="Active Contact";
@@ -46,12 +37,12 @@ if(isset($_POST)) {
     $contact = $_POST['contact'];
     $contact = json_decode($contact);
     if($contact) {
-        $attacks = new Attacks();
+        $attacks = new Objects\Attacks();
         $attack_types = $attacks->types;
         $avail_attacks = $attacks->get_available($contact);
-        $issue_res = new IssueResolutions();
+        $issue_res = new Objects\IssueResolutions();
         $avail_issue_res = $issue_res->get_available($contact);
-        $customer_stances = new CustomerStances();
+        $customer_stances = new Objects\CustomerStances();
         $avail_stances = $customer_stances->get_available();
     }
     else {

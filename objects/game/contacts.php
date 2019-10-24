@@ -1,8 +1,5 @@
 <?php
-include_once('customers.php');
-include_once('issues.php');
-include_once("config/database.php");
-include_once ("agents.php");
+namespace Game\Objects;
 
 class Contact{
     public $customer;
@@ -19,7 +16,7 @@ class Contact{
     public $cx_proficiency;
     
     public function __construct(){
-        $db = new Database();
+        $db = new \Game\Config\Database();
         $this->agent = new Agent($db->getConnection());
         $this->agent->playerAgentExists();
         $this->agent_name = $this->agent->firstname;

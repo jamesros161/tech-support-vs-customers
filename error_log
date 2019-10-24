@@ -1,1 +1,183 @@
 [24-Oct-2019 07:18:18 America/New_York] PHP Notice:  Undefined index: user_id in /home/game/public_html/objects/game/agents.php on line 29
+[24-Oct-2019 11:39:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Game\Database' not found in /home/game/public_html/index.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 49
+[24-Oct-2019 11:41:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Game\Config\Database' not found in /home/game/public_html/index.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 50
+[24-Oct-2019 11:42:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Game\Agent' not found in /home/game/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 51
+[24-Oct-2019 11:45:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Game\Config\Database' not found in /home/game/public_html/index.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 50
+[24-Oct-2019 11:47:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Game\Config\Database' not found in /home/game/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 51
+[24-Oct-2019 11:51:52 UTC] PHP Fatal error:  Cannot use Game\Config as Config because the name is already in use in /home/game/public_html/index.php on line 17
+[24-Oct-2019 11:52:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Game\Config\Database' not found in /home/game/public_html/index.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 50
+[24-Oct-2019 11:53:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Game\Game\Config\Database' not found in /home/game/public_html/index.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 50
+[24-Oct-2019 11:54:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Game\Config\Database' not found in /home/game/public_html/index.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 50
+[24-Oct-2019 07:59:06 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Agent' not found in /home/game/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 51
+[24-Oct-2019 08:00:29 America/New_York] PHP Warning:  include(../objects/game/agents.php): failed to open stream: No such file or directory in /home/game/public_html/config/game_includes.php on line 6
+[24-Oct-2019 08:00:29 America/New_York] PHP Warning:  include(): Failed opening '../objects/game/agents.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/game/public_html/config/game_includes.php on line 6
+[24-Oct-2019 08:00:29 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Agent' not found in /home/game/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 51
+[24-Oct-2019 08:01:08 America/New_York] PHP Warning:  include(../objects/game/agents.php): failed to open stream: No such file or directory in /home/game/public_html/config/game_includes.php on line 6
+[24-Oct-2019 08:01:08 America/New_York] PHP Warning:  include(): Failed opening '../objects/game/agents.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/game/public_html/config/game_includes.php on line 6
+[24-Oct-2019 08:01:08 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Object\Agent' not found in /home/game/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 51
+[24-Oct-2019 08:02:43 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Object\Agent' not found in /home/game/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 51
+[24-Oct-2019 08:04:22 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Config\PDO' not found in /home/game/public_html/config/database.php:20
+Stack trace:
+#0 /home/game/public_html/index.php(51): Game\Config\Database->getConnection()
+#1 {main}
+  thrown in /home/game/public_html/config/database.php on line 20
+[24-Oct-2019 08:05:33 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Config\PHP\PDO' not found in /home/game/public_html/config/database.php:20
+Stack trace:
+#0 /home/game/public_html/index.php(51): Game\Config\Database->getConnection()
+#1 {main}
+  thrown in /home/game/public_html/config/database.php on line 20
+[24-Oct-2019 08:09:09 America/New_York] PHP Notice:  Undefined index: user_id in /home/game/public_html/objects/game/agents.php on line 31
+[24-Oct-2019 08:09:09 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Objects\Attribute' not found in /home/game/public_html/objects/game/agents.php:32
+Stack trace:
+#0 /home/game/public_html/index.php(51): Game\Objects\Agent->__construct(Object(PDO))
+#1 {main}
+  thrown in /home/game/public_html/objects/game/agents.php on line 32
+[24-Oct-2019 08:10:47 America/New_York] PHP Fatal error:  Cannot declare class Game\Objects\Attribute, because the name is already in use in /home/game/public_html/objects/game/attributes.php on line 4
+[24-Oct-2019 08:14:22 America/New_York] PHP Notice:  Undefined index: user_id in /home/game/public_html/objects/game/agents.php on line 30
+[24-Oct-2019 08:14:22 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Objects\Database' not found in /home/game/public_html/objects/game/agents.php:64
+Stack trace:
+#0 /home/game/public_html/index.php(52): Game\Objects\Agent->playerAgentExists()
+#1 {main}
+  thrown in /home/game/public_html/objects/game/agents.php on line 64
+[24-Oct-2019 08:15:40 America/New_York] PHP Notice:  Undefined index: user_id in /home/game/public_html/objects/game/agents.php on line 30
+[24-Oct-2019 08:15:40 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Utils' not found in /home/game/public_html/index.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 57
+[24-Oct-2019 08:17:57 America/New_York] PHP Notice:  Undefined index: user_id in /home/game/public_html/objects/game/agents.php on line 30
+[24-Oct-2019 08:17:57 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Utils' not found in /home/game/public_html/index.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 57
+[24-Oct-2019 08:19:02 America/New_York] PHP Notice:  Undefined index: user_id in /home/game/public_html/objects/game/agents.php on line 30
+[24-Oct-2019 08:19:02 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Libs\Utils' not found in /home/game/public_html/index.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/index.php on line 54
+[24-Oct-2019 08:19:53 America/New_York] PHP Notice:  Undefined index: user_id in /home/game/public_html/objects/game/agents.php on line 30
+[24-Oct-2019 08:19:59 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /home/game/public_html/login.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/login.php on line 22
+[24-Oct-2019 08:21:44 America/New_York] PHP Warning:  require(require/game_includes.php): failed to open stream: No such file or directory in /home/game/public_html/login.php on line 18
+[24-Oct-2019 08:21:44 America/New_York] PHP Fatal error:  require(): Failed opening required 'require/game_includes.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/game/public_html/login.php on line 18
+[24-Oct-2019 08:22:03 America/New_York] PHP Notice:  session_start(): A session had already been started - ignoring in /home/game/public_html/config/core.php on line 9
+[24-Oct-2019 08:22:03 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Config\Database' not found in /home/game/public_html/login.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/login.php on line 21
+[24-Oct-2019 08:22:32 America/New_York] PHP Notice:  session_start(): A session had already been started - ignoring in /home/game/public_html/config/core.php on line 9
+[24-Oct-2019 08:22:32 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\User' not found in /home/game/public_html/login.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/login.php on line 26
+[24-Oct-2019 08:23:47 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/game/public_html/config/game_includes.php on line 9
+[24-Oct-2019 08:23:58 America/New_York] PHP Notice:  session_start(): A session had already been started - ignoring in /home/game/public_html/config/core.php on line 9
+[24-Oct-2019 08:23:58 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\User' not found in /home/game/public_html/login.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/login.php on line 26
+[24-Oct-2019 08:24:38 America/New_York] PHP Notice:  session_start(): A session had already been started - ignoring in /home/game/public_html/config/core.php on line 9
+[24-Oct-2019 08:24:38 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Objects\User' not found in /home/game/public_html/login.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/login.php on line 26
+[24-Oct-2019 08:25:32 America/New_York] PHP Notice:  Undefined index: user_id in /home/game/public_html/objects/game/agents.php on line 30
+[24-Oct-2019 08:25:35 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Objects\User' not found in /home/game/public_html/login.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/login.php on line 22
+[24-Oct-2019 08:26:14 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Objects\PDO' not found in /home/game/public_html/objects/user.php:58
+Stack trace:
+#0 /home/game/public_html/login.php(28): Game\Objects\User->emailExists()
+#1 {main}
+  thrown in /home/game/public_html/objects/user.php on line 58
+[24-Oct-2019 08:26:43 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Objects\PDO' not found in /home/game/public_html/objects/game/agents.php:78
+Stack trace:
+#0 /home/game/public_html/index.php(49): Game\Objects\Agent->playerAgentExists()
+#1 {main}
+  thrown in /home/game/public_html/objects/game/agents.php on line 78
+[24-Oct-2019 08:27:13 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /home/game/public_html/agentstats.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/agentstats.php on line 40
+[24-Oct-2019 08:27:50 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Agent' not found in /home/game/public_html/agentstats.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/agentstats.php on line 41
+[24-Oct-2019 08:28:11 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Objects\Attribute' not found in /home/game/public_html/objects/game/agents.php:31
+Stack trace:
+#0 /home/game/public_html/agentstats.php(41): Game\Objects\Agent->__construct(Object(Game\Config\Database))
+#1 {main}
+  thrown in /home/game/public_html/objects/game/agents.php on line 31
+[24-Oct-2019 12:29:18 UTC] PHP Parse error:  syntax error, unexpected '$page_title' (T_VARIABLE) in /home/game/public_html/agentstats.php on line 7
+[24-Oct-2019 08:29:44 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /home/game/public_html/newcontact.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/newcontact.php on line 38
+[24-Oct-2019 08:31:39 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Objects\Database' not found in /home/game/public_html/objects/game/contacts.php:19
+Stack trace:
+#0 /home/game/public_html/newcontact.php(38): Game\Objects\Contact->__construct(Object(Game\Objects\Agent))
+#1 {main}
+  thrown in /home/game/public_html/objects/game/contacts.php on line 19
+[24-Oct-2019 08:32:19 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Objects\Game\Config\Database' not found in /home/game/public_html/objects/game/contacts.php:19
+Stack trace:
+#0 /home/game/public_html/newcontact.php(38): Game\Objects\Contact->__construct(Object(Game\Objects\Agent))
+#1 {main}
+  thrown in /home/game/public_html/objects/game/contacts.php on line 19
+[24-Oct-2019 08:32:57 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Objects\Customer' not found in /home/game/public_html/objects/game/contacts.php:23
+Stack trace:
+#0 /home/game/public_html/newcontact.php(38): Game\Objects\Contact->__construct(Object(Game\Objects\Agent))
+#1 {main}
+  thrown in /home/game/public_html/objects/game/contacts.php on line 23
+[24-Oct-2019 08:34:17 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Objects\Issue' not found in /home/game/public_html/objects/game/contacts.php:25
+Stack trace:
+#0 /home/game/public_html/newcontact.php(38): Game\Objects\Contact->__construct(Object(Game\Objects\Agent))
+#1 {main}
+  thrown in /home/game/public_html/objects/game/contacts.php on line 25
+[24-Oct-2019 08:34:18 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Game\Objects\Issue' not found in /home/game/public_html/objects/game/contacts.php:25
+Stack trace:
+#0 /home/game/public_html/newcontact.php(38): Game\Objects\Contact->__construct(Object(Game\Objects\Agent))
+#1 {main}
+  thrown in /home/game/public_html/objects/game/contacts.php on line 25
+[24-Oct-2019 08:35:21 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Database' not found in /home/game/public_html/play.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/game/public_html/play.php on line 16
+[24-Oct-2019 08:38:34 America/New_York] PHP Notice:  Undefined variable: stance_list in /home/game/public_html/objects/game/customer_stances.php on line 14

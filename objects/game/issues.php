@@ -1,4 +1,5 @@
 <?php
+namespace Game\Objects;
 // 'user' object
 
 class Issue{

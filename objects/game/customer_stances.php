@@ -1,4 +1,5 @@
 <?php
+namespace Game\Objects;
 
 class CustomerStances{
     public $stance_list;

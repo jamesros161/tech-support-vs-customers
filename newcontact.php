@@ -1,11 +1,7 @@
 <?php
 // core configuration
 define('GAME_LOADED', true);
-include_once "config/core.php";
-include_once "objects/game/agents.php";
-include_once "objects/game/contacts.php";
-include_once "libs/php/utils.php";
-include_once "config/database.php";
+require('config/game_includes.php');
  
 // set page title
 $page_title="New Contact";
@@ -35,11 +31,11 @@ echo "<div class='col-md-12'>";
     }
  
     // content once logged in
-        $db = new Database();
-        $player_agent = new Agent($db);
+        $db = new Game\Config\Database();
+        $player_agent = new Game\Objects\Agent($db);
         $isPlayerAgent = $player_agent->playerAgentExists();
         if ( $isPlayerAgent ) {
-            $contact = new Contact($player_agent);
+            $contact = new Game\Objects\Contact($player_agent);
             ?>
             <table class="table table-responsive">
             <tr><td class="align-right bold">Issue:</td><td><?php echo $contact->issue_string;?></td><td></td></tr>

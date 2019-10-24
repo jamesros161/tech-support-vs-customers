@@ -1,10 +1,8 @@
 <?php
-// core configuration
-include_once "config/core.php";
- 
+namespace Game;
+require("config/game_includes.php");
 // set page title
 $page_title = "Login";
- 
 // include login checker
 $require_login=false;
 include_once "login_checker.php";
@@ -15,15 +13,13 @@ $access_denied=false;
 // if the login form was submitted
 if($_POST){
     // include classes
-    include_once "config/database.php";
-    include_once "objects/user.php";
  
     // get database connection
-    $database = new Database();
+    $database = new Config\Database();
     $db = $database->getConnection();
  
     // initialize objects
-    $user = new User($db);
+    $user = new Objects\User($db);
  
     // check if email and password are in the database
     $user->email=$_POST['email'];

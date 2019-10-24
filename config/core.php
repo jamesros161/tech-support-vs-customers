@@ -1,4 +1,7 @@
 <?php
+
+namespace Game\Config;
+
 // show error reporting
 error_reporting(E_ALL);
  

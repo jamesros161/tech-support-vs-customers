@@ -1,7 +1,8 @@
 <?php
 // 'user' object
-include_once('attributes.php');
-include_once "config/database.php";
+namespace Game\Objects;
+
+use Game\Config;
 
 class Agent{
  
@@ -60,7 +61,7 @@ class Agent{
     }
     //Check if given Agent Exists in Database
     function playerAgentExists() {
-        $db = new Database();
+        $db = new \Game\Config\Database();
         
         $query = "SELECT id, firstname, strength, dexterity, constitution, intelligence, wisdom, charisma, level, xptolvlup, aht, hmp, ahtcost, initial_roll
                 FROM " . $this->table_name . "
@@ -74,7 +75,7 @@ class Agent{
         
         $num = $statement->rowCount();
         if($num>0) {
-            $row = $statement->fetch(PDO::FETCH_ASSOC);
+            $row = $statement->fetch(\PDO::FETCH_ASSOC);
             
             $this->id = $row['id'];
             $this->firstname = $row['firstname'];
@@ -158,7 +159,7 @@ class Agent{
                     xptolvlup = :xptolvlup
                 WHERE
                     id = :agent_id";
-        $db = new Database();
+        $db = new \Game\Config\Database();
         $conn = $db->getConnection();
         $stmt = $conn->prepare($query);
         
@@ -237,7 +238,7 @@ class Agent{
                     created = :created";
      
         // prepare the query
-        $db = new Database();
+        $db = new \Game\Config\Database();
         $conn = $db->getConnection();
         $stmt = $conn->prepare($query);
      

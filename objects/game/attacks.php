@@ -1,5 +1,7 @@
 <?php
 
+namespace Game\Objects;
+
 class Attacks{
     public $attack_list;
     public $hold;

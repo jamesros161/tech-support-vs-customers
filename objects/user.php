@@ -1,4 +1,7 @@
 <?php
+
+namespace Game\Objects;
+
 // 'user' object
 class User{
  
@@ -52,7 +55,7 @@ class User{
         if($num>0){
      
             // get record details / values
-            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+            $row = $stmt->fetch(\PDO::FETCH_ASSOC);
      
             // assign values to object properties
             $this->id = $row['id'];

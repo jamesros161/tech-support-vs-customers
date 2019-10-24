@@ -6,13 +6,12 @@
 *            If user has created an agent, it redirects to agentstats.php
 *   todos : N/A
 */
-
-    // core configuration
+    namespace Game;
     define('GAME_LOADED', true);
-    include_once "config/core.php";
+    require("config/game_includes.php");
+    // core configuration
     include_once "objects/game/agents.php";
-    include_once "libs/php/utils.php";
-    include_once "config/database.php";
+    //include_once "config/database.php";
      
     // set page title
     $page_title="Index";
@@ -21,7 +20,7 @@
     // include login checker
     $require_login=true;
     include_once "login_checker.php";
-     
+    
     // include page header HTML
     include_once 'template/layout_head.php';
      
@@ -45,14 +44,14 @@
     }
  
     // PAGE CONTENT
-        $db = new Database();
-        $player_agent = new Agent($db->getConnection());
+        $db = new Config\Database();
+        $player_agent = new Objects\Agent($db->getConnection());
         $isPlayerAgent = $player_agent->playerAgentExists();
         if ( $isPlayerAgent ) {
-            Utils::redirect("agentstats.php");
+            Libs\Utils::redirect("agentstats.php");
         }
         else {
-            Utils::redirect("newagent.php?action=initial_roll");
+            Libs\Utils::redirect("newagent.php?action=initial_roll");
         }
     // END PAGE CONTENT
     
